@@ -5,11 +5,13 @@
   "main": "app.js",
   "author": "Render Developers",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "music-metadata": "^8.1.3"
   },
   "engines": {
     "node": ">=14"
