@@ -35,6 +35,7 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/list", (req, res)=>{
+  res.setHeader("Access-Control-Allow-Origin", "*")
   fs.readdir("./static/music", (err, files)=>{
     res.json(JSON.stringify(err||files))
   })
